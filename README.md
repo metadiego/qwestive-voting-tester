@@ -14,7 +14,7 @@ npm install
 npm run 'SCRIPT_NAME'
 ```
 
-Where script name corresponds to a key in package.json scripts. For example:
+Where SCRIPT_NAME corresponds to an element in package.json[scripts]. For example:
 
 ```
 npm run example
