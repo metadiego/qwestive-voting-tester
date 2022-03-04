@@ -5,18 +5,29 @@
   "description": "Script for testing and debugging Qwestive's voting smart contract",
   "scripts": {
     "compile": "tsc -p ./tsconfig.json",
-    "example": "npm run compile && node build/setup.js"
+    "example": "npm run compile && node build/setup.js",
+    "test": "ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/metadiego/qwestive-voting-tester.git"
   },
   "dependencies": {
-    "@solana/web3.js": "^1.36.0",
+    "@project-serum/anchor": "^0.20.1",
+    "@project-serum/common": "^0.0.1-beta.3",
+    "@solana/buffer-layout": "4.0.0",
+    "@solana/spl-token": "^0.1.8",
+    "@solana/web3.js": "^0.87.1",
+    "anchor": "^1.4.0",
+    "bs58": "^4.0.1",
     "ts-node": "^10.6.0",
     "typescript": "^4.6.2"
   },
   "devDependencies": {
-    "@types/node": "^17.0.21"
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^17.0.21",
+    "chai": "^4.3.4",
+    "mocha": "^9.2.1",
+    "ts-mocha": "^9.0.0"
   }
 }
