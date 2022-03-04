@@ -9,6 +9,7 @@ export const logError = (msg: string) => {
   console.log(`\x1b[31m${msg}\x1b[0m`);
 };
 
+const LOCAL_VALIDATOR_URL = "http://localhost:8899";
 const DEV_NET_URL = 'https://api.devnet.solana.com';
 
 /**

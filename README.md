@@ -8,6 +8,8 @@ Install all dependencies:
 npm install
 ```
 
+Update establishConnection() in src/util.ts to ensure that connection is stablished with expected Solana instance. The program provides 2 constants: LOCAL_VALIDATOR_URL and DEV_NET_URL.
+
 ## To run the script:
 
 ```
