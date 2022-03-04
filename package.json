@@ -1,0 +1,22 @@
+{
+  "name": "qwestive-voting-tester",
+  "author": "metadiego",
+  "version": "1.0.0",
+  "description": "Script for testing and debugging Qwestive's voting smart contract",
+  "scripts": {
+    "compile": "tsc -p ./tsconfig.json",
+    "example": "npm run compile && node build/setup.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metadiego/qwestive-voting-tester.git"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.36.0",
+    "ts-node": "^10.6.0",
+    "typescript": "^4.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21"
+  }
+}
