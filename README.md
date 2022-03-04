@@ -1,5 +1,13 @@
 # Qwestive Voting Smart Contract Test Script
 
+## Before you begin:
+
+Install all dependencies:
+
+```
+npm install
+```
+
 ## To run the script:
 
 ```
